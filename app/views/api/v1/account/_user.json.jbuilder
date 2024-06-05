@@ -1,1 +1,1 @@
-json.call(user, :id, :email, :first_name, :last_name, :bio)
+json.call(user, :id, :email, :first_name, :last_name, :bio, :twitter_handle)

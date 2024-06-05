@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.2"
+ruby "3.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 6.1.1"
@@ -44,6 +44,8 @@ group :development, :test do
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
+
+  gem "shoulda-matchers", "~> 5.3"
 end
 
 group :development do
@@ -60,4 +62,7 @@ gem "devise-jwt"
 gem "interactor"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.5"
-gem "twitter"
+
+# gem "x", "~> 0.14.1"
+
+gem "twitter", "~> 7.0"
